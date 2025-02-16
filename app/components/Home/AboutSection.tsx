@@ -1,45 +1,64 @@
+"use client";
+
+import { useEffect } from "react";
+import AOS from "aos";
 import Image from "next/image";
 const AboutSection = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 600,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false,
+        });
+    }, [])
     return <section id="about" className="about section">
 
         <div className="container section-title" data-aos="fade-up">
             <h2>About</h2>
-            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            <p>As a dedicated software developer with expertise in Python, I specialize in building robust applications using frameworks like Django, along with front-end technologies such as React.js, Vue.js, and Nuxt.js. I also have hands-on experience deploying Django applications on AWS EC2, ensuring reliable hosting, and utilizing Docker for containerization.                </p>
+            <p>
+                In my most recent project, I successfully hosted a Python-based application, kashwork.com, using Docker, showcasing my ability to deploy scalable solutions efficiently.
+            </p>
+            <p>
+                Currently, I am expanding my knowledge in Machine Learning, Deep Learning, and Data Science. While I don’t have industrial experience in these fields yet, I am passionate about building my career as a Machine Learning Developer and eager to apply my skills in Python to solve real-world challenges.
+            </p>
+            <p>
+                I&apos;m excited to contribute to innovative projects and work with teams that leverage cutting-edge technologies in the AI and ML space.
+            </p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
 
             <div className="row gy-4 justify-content-center">
                 <div className="col-lg-4">
-                    <Image width={100} height={100} src="assets/img/my-profile-img.jpg" className="img-fluid" alt="" />
+                    <Image width={100} height={100} src="/assets/img/pic.png" className="img-fluid" alt="" />
                 </div>
                 <div className="col-lg-8 content">
-                    <h2>UI/UX Designer &amp; Web Developer.</h2>
+                    <h2>Python Developer</h2>
                     <p className="fst-italic py-3">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua.
+                        Python Developer @Wisdominfosoft | Django | ML | Vue Js
                     </p>
                     <div className="row">
                         <div className="col-lg-6">
                             <ul>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>25 January 1997</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>sakibmalik.vercel.app</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8954664647</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chandigarh, India</span></li>
                             </ul>
                         </div>
                         <div className="col-lg-6">
                             <ul>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
                                 <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>email@example.com</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>maliksakib347@gmail.com</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Not Available</span></li>
                             </ul>
                         </div>
                     </div>
                     <p className="py-3">
-                        Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                        Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+                        #Python #Django #ReactJS #VueJS #NuxtJS #FullStack #SoftwareDevelopment #AWS #EC2 #Docker #Containerization #ScalableSolutions #MachineLearning #DeepLearning #DataScience #AIDevelopment
                     </p>
                 </div>
             </div>

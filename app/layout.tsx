@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'glightbox/dist/css/glightbox.min.css'
 import 'swiper/swiper-bundle.css'
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import './assets/vendor/bootstrap-icons/bootstrap-icons.css'
 import './assets/css/main.css'
 import Loader from "./components/Loader";

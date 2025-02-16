@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@srexi/purecounterjs": "^1.2.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
     "glightbox": "^3.3.1",
@@ -23,9 +24,12 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/aos": "^3.0.7",
+    "@types/imagesloaded": "^4.1.6",
+    "@types/isotope-layout": "^3.0.14",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/waypoints": "^4.0.7",
     "eslint": "^9",
     "eslint-config-next": "15.1.7",
     "postcss": "^8",
