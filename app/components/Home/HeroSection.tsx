@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import AOS from "aos";
 import Image from "next/image";
+import Typed from "typed.js";
 
 const HeroSection: React.FC = () => {
+    const typedRef = useRef(null);
     useEffect(() => {
         // Initialize AOS for animations
         AOS.init({
@@ -13,24 +15,19 @@ const HeroSection: React.FC = () => {
             once: true,
             mirror: false,
         });
-        if (typeof window !== "undefined") {
-            import("glightbox").then((module) => {
-                const GLightbox = module.default;
-                GLightbox({
-                    selector: ".glightbox",
-                });
-            });
-        }
-      
-        // Dynamically import glightbox on client-side
-        // if (typeof window !== "undefined") {
-        //     import("glightbox").then((module) => {
-        //         const GLightbox = module.default;
-        //         GLightbox({
-        //             selector: ".glightbox",
-        //         });
-        //     });
-        // }
+        const typed = new Typed(typedRef.current, {
+            strings: ["Designer", "Developer", "Freelancer", "Machine Learning Developer"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 1500,
+            loop: true,
+            showCursor: true,
+            cursorChar: "|",
+        });
+        return () => {
+            // Destroy typed instance on unmount
+            typed.destroy();
+        };
     }, []);
 
     return (
@@ -47,11 +44,7 @@ const HeroSection: React.FC = () => {
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Sakib Malik</h2>
                 <p>
-                    I&apos;m &nbsp;
-                    <span className="typed" data-typed-items="Developer, Freelancer">
-                        Software Developer
-                    </span>
-                    <span className="typed-cursor typed-cursor--blink" aria-hidden="true"></span>
+                    I&apos;m <span ref={typedRef}></span>
                 </p>
             </div>
         </section>
