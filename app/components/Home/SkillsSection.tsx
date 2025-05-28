@@ -27,7 +27,6 @@ const SkillsSection = () => {
                                     (el as HTMLElement).style.width = value + "%";
                                 }
                             });
-                            // this.destroy(); // Prevent multiple triggers
                         },
                     });
                 });
@@ -62,6 +61,12 @@ const SkillsSection = () => {
                             <div className="progress-bar" role="progressbar" aria-valuenow={75} aria-valuemin={0} aria-valuemax={100}></div>
                         </div>
                     </div>
+                    <div className="progress">
+                        <span className="skill"><span>React JS</span> <i className="val">40%</i></span>
+                        <div className="progress-bar-wrap">
+                            <div className="progress-bar" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-lg-6">
                     <div className="progress">
@@ -78,6 +83,12 @@ const SkillsSection = () => {
                     </div>
                     <div className="progress">
                         <span className="skill"><span>ML</span> <i className="val">55%</i></span>
+                        <div className="progress-bar-wrap">
+                            <div className="progress-bar" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}></div>
+                        </div>
+                    </div>
+                    <div className="progress">
+                        <span className="skill"><span>NEXT JS</span> <i className="val">40%</i></span>
                         <div className="progress-bar-wrap">
                             <div className="progress-bar" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}></div>
                         </div>

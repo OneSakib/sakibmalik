@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
             mirror: false,
         });
         const typed = new Typed(typedRef.current, {
-            strings: ["Designer", "Developer", "Freelancer", "Machine Learning Developer"],
+            strings: ["Designer", "Developer", "Freelancer", "ML Developer"],
             typeSpeed: 50,
             backSpeed: 25,
             backDelay: 1500,
