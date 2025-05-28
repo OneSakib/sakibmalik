@@ -15,9 +15,8 @@ const SkillsSection = () => {
         if (typeof window !== "undefined") {
             import("waypoints/lib/noframework.waypoints").then(() => {
                 const skillAnimations = document.querySelectorAll(".skills-animation");
-
                 skillAnimations.forEach((item) => {
-                    new (window as any).Waypoint({
+                    new (window).Waypoint({
                         element: item,
                         offset: "80%",
                         handler: function () {
@@ -28,7 +27,7 @@ const SkillsSection = () => {
                                     (el as HTMLElement).style.width = value + "%";
                                 }
                             });
-                            this.destroy(); // Prevent multiple triggers
+                            // this.destroy(); // Prevent multiple triggers
                         },
                     });
                 });
