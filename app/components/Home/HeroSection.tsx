@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import AOS from "aos";
-import Image from "next/image";
+// import Image from "next/image";
 import Typed from "typed.js";
 
 const HeroSection: React.FC = () => {
@@ -32,7 +32,7 @@ const HeroSection: React.FC = () => {
 
     return (
         <section id="hero" className="hero section dark-background">
-            <Image
+            {/* <Image
                 width={1920}
                 height={1080}
                 src="/assets/img/hero-bg.jpg"
@@ -40,7 +40,7 @@ const HeroSection: React.FC = () => {
                 data-aos="fade-in"
                 priority
             />
-
+            */}
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Sakib Malik</h2>
                 <p>
