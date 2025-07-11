@@ -75,7 +75,6 @@ const ResumeSection = () => {
             </div>
 
         </div>
-
     </section>
 }
 export default ResumeSection;

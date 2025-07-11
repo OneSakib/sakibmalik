@@ -27,9 +27,7 @@ const AboutSection = () => {
                 I&apos;m excited to contribute to innovative projects and work with teams that leverage cutting-edge technologies in the AI and ML space.
             </p>
         </div>
-
         <div className="container" data-aos="fade-up" data-aos-delay="100">
-
             <div className="row gy-4 justify-content-center">
                 <div className="col-lg-4">
                     <Image width={100} height={100} src="/assets/img/pic.png" className="img-fluid" alt="" />
@@ -60,11 +58,16 @@ const AboutSection = () => {
                     <p className="py-3">
                         #Python #Django #ReactJS #VueJS #NuxtJS #FullStack #SoftwareDevelopment #AWS #EC2 #Docker #Containerization #ScalableSolutions #MachineLearning #DeepLearning #DataScience #AIDevelopment
                     </p>
+                    <a
+                        href="/Sakib_Malik_Python_Developer_3_Year_Experience.pdf"
+                        download
+                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
+                    >
+                        Download Resume <i className="bi bi-download ml-2"></i>
+                    </a>
                 </div>
             </div>
-
         </div>
-
     </section>
 }
 export default AboutSection;
