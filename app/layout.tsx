@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import './assets/vendor/bootstrap-icons/bootstrap-icons.css'
 import './assets/css/main.css'
 import Loader from "./components/Loader";
+import Script from 'next/script';
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,6 +24,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Sakib Malik",
   description: "Sakib Malik || Portfolio",
+  icons: {
+    icon: '/logo.ico',
+  },
 };
 
 export default function RootLayout({
@@ -39,6 +43,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Loader />
+        <Script src="/assets/js/main.js" strategy="afterInteractive" />
       </body>
     </html>
   );

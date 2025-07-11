@@ -34,12 +34,10 @@ const SkillsSection = () => {
         }
     }, [])
     return <section id="skills" className="skills section light-background">
-
         <div className="container section-title" data-aos="fade-up">
             <h2>Skills</h2>
             <p>Python Developer @Wisdominfosoft | Django | ML | Vue Js</p>
         </div>
-
         <div className="container" data-aos="fade-up" data-aos-delay="100">
             <div className="row skills-content skills-animation">
                 <div className="col-lg-6">
@@ -67,6 +65,12 @@ const SkillsSection = () => {
                             <div className="progress-bar" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}></div>
                         </div>
                     </div>
+                    <div className="progress">
+                        <span className="skill"><span>NEXT JS</span> <i className="val">40%</i></span>
+                        <div className="progress-bar-wrap">
+                            <div className="progress-bar" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}></div>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-lg-6">
                     <div className="progress">
@@ -88,7 +92,7 @@ const SkillsSection = () => {
                         </div>
                     </div>
                     <div className="progress">
-                        <span className="skill"><span>NEXT JS</span> <i className="val">40%</i></span>
+                        <span className="skill"><span>Langchain</span> <i className="val">55%</i></span>
                         <div className="progress-bar-wrap">
                             <div className="progress-bar" role="progressbar" aria-valuenow={55} aria-valuemin={0} aria-valuemax={100}></div>
                         </div>

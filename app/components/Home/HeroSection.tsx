@@ -16,7 +16,7 @@ const HeroSection: React.FC = () => {
             mirror: false,
         });
         const typed = new Typed(typedRef.current, {
-            strings: ["Designer", "Developer", "Freelancer", "ML Developer"],
+            strings: ["Python Developer", "Freelancer", "ML Developer"],
             typeSpeed: 50,
             backSpeed: 25,
             backDelay: 1500,
@@ -32,14 +32,14 @@ const HeroSection: React.FC = () => {
 
     return (
         <section id="hero" className="hero section dark-background">
-             <Image
+            <Image
                 width={1920}
                 height={1080}
                 src="/assets/img/hero-bg.jpg"
                 alt="Hero Background"
                 data-aos="fade-in"
                 priority
-            />            
+            />
             <div className="container" data-aos="fade-up" data-aos-delay="100">
                 <h2>Sakib Malik</h2>
                 <p>

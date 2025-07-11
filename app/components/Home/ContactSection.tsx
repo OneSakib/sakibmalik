@@ -56,14 +56,14 @@ const ContactSection = () => {
                             <i className="bi bi-telephone flex-shrink-0"></i>
                             <div>
                                 <h3>Call Us</h3>
-                                <p>+91 8954664647</p>
+                                <p><a href="tel:+918954664647">+91 8954664647</a></p>
                             </div>
                         </div>
                         <div className="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
                             <i className="bi bi-envelope flex-shrink-0"></i>
                             <div>
                                 <h3>Email Us</h3>
-                                <p>maliksakib347@gmail.com</p>
+                                <p><a href="mailto:maliksakib347@gmail.com">maliksakib347@gmail.com</a></p>
                             </div>
                         </div>
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109744.22709325235!2d76.6883122770574!3d30.732254422147673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fed0be66ec96b%3A0xa5ff67f9527319fe!2sChandigarh!5e0!3m2!1sen!2sin!4v1739707753499!5m2!1sen!2sin" width="600" height="450" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
@@ -74,19 +74,19 @@ const ContactSection = () => {
                         <div className="row gy-4">
                             <div className="col-md-6">
                                 <label htmlFor="name-field" className="pb-2">Your Name</label>
-                                <input type="text" name="name" id="name-field" className="form-control" value={form.name} onChange={handleChange} required />
+                                <input type="text" name="name" id="name-field" className="form-control" placeholder="Your Name" value={form.name} onChange={handleChange} required />
                             </div>
                             <div className="col-md-6">
                                 <label htmlFor="email-field" className="pb-2">Your Email</label>
-                                <input type="email" className="form-control" name="email" id="email-field" value={form.email} onChange={handleChange} required />
+                                <input type="email" className="form-control" name="email" id="email-field" placeholder="Your Email" value={form.email} onChange={handleChange} required />
                             </div>
                             <div className="col-md-12">
                                 <label htmlFor="subject-field" className="pb-2">Subject</label>
-                                <input type="text" className="form-control" name="subject" id="subject-field" value={form.subject} onChange={handleChange} required />
+                                <input type="text" className="form-control" name="subject" id="subject-field" placeholder="Subject" value={form.subject} onChange={handleChange} required />
                             </div>
                             <div className="col-md-12">
                                 <label htmlFor="message-field" className="pb-2">Message</label>
-                                <textarea className="form-control" name="message" rows={10} id="message-field" value={form.message} onChange={handleChange} required></textarea>
+                                <textarea className="form-control" name="message" rows={10} id="message-field" placeholder="Your Message" value={form.message} onChange={handleChange} required></textarea>
                             </div>
                             <p>{status}</p>
                             <div className="col-md-12 text-center">

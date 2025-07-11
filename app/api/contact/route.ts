@@ -1,15 +1,26 @@
 import nodemailer from "nodemailer";
 import { NextRequest, NextResponse } from "next/server";
-
+function sanitizeInput(input: string): string {
+  return input
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, subject, message } = body;
+    let { name, email, subject, message } = body;
 
     if (!name || !email || !message) {
       return NextResponse.json({ message: "Missing fields" }, { status: 400 });
     }
 
+    name = sanitizeInput(name);
+    email = sanitizeInput(email);
+    subject = sanitizeInput(subject || "New Contact Form Message");
+    message = sanitizeInput(message);
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
@@ -21,8 +32,8 @@ export async function POST(request: NextRequest) {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: process.env.EMAIL_TO,
-      subject: subject,
-      text: `Name: ${name}\nEmail: ${email}\nMessage:\n${message}`,
+      subject: "New Contact from Portfolio",
+      text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`,
     });
 
     return NextResponse.json({ message: "Email sent" }, { status: 200 });

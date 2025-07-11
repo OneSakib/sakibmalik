@@ -43,17 +43,17 @@ const AboutSection = () => {
                         <div className="col-lg-6">
                             <ul>
                                 <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>25 January 1997</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>sakibmalik.vercel.app</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8954664647</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chandigarh, India</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://sakibmalik.vercel.app">sakibmalik.vercel.app</a></span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span><a href="tel:+918954664647">+91 8954664647</a></span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span><a href="https://www.google.com/maps/place/Mohali,+India" target="_blank" rel="noopener noreferrer">Mohali, India</a></span></li>
                             </ul>
                         </div>
                         <div className="col-lg-6">
                             <ul>
                                 <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
                                 <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>maliksakib347@gmail.com</span></li>
-                                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Not Available</span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span><a href="mailto:maliksakib347@gmail.com">maliksakib347@gmail.com</a></span></li>
+                                <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                             </ul>
                         </div>
                     </div>

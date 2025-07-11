@@ -26,7 +26,8 @@ const RealTimeProjects = () => {
                             <Image width={500} height={500} src="/assets/img/portfolio/kashwork.png" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>KashWork</h4>
-                                <p>Kashwork is a professional platform developed to manage digital jobs and freelance work. It offers businesses and individuals a space to collaborate, manage tasks, and streamline workflows. I contributed to both frontend (Vue.js) and backend (Django), focusing on performance, usability, and seamless user interaction.</p>
+                                <p>An e-commerce platform designed to support digital jobs and freelance services. KashWork connects businesses with professionals, enabling service listings, order management, secure transactions, and user communication.</p>
+                                <p>My Contribution: Full-stack development—built secure APIs with Django, developed interactive components in Vue.js, optimized platform performance, and improved user workflows.</p>
                                 <div className="tech-stack">
                                     <span className="tags">Python (Django)</span>
                                     <span className="tags">Vue.js</span>
@@ -40,7 +41,8 @@ const RealTimeProjects = () => {
                             <Image width={500} height={500} src="/assets/img/portfolio/negls.png" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>Negls</h4>
-                                <p>Negls is an employee analysis platform designed to provide insights into employee profiles. Users can view individual employee details, understand their roles, and evaluate performance metrics. The goal of this platform is to help companies make informed hiring and HR decisions.</p>
+                                <p>An employee analysis platform to provide insights into employee profiles, job roles, and performance metrics, helping companies make data-driven HR decisions.</p>
+                                <p>My Contribution: Backend development, database modeling, and API integration.</p>
                                 <div className="tech-stack">
                                     <span className="tags">Python (Django)</span>
                                 </div>
@@ -53,7 +55,8 @@ const RealTimeProjects = () => {
                             <Image width={500} height={500} src="/assets/img/portfolio/ailocalexpert.png" className="img-fluid" alt="" />
                             <div className="portfolio-info">
                                 <h4>AI LocalExpert</h4>
-                                <p>AI LocalExpert is a smart chatbot app designed to automate customer support. Users can enter their website URL, and the app will crawl the site, extract content, and use it to power a conversational chatbot. After embedding a provided script on their site, users enable real-time, content-aware AI conversations powered by OpenAI.</p>
+                                <p>An AI-powered chatbot tool that crawls a user’s website and builds a conversational assistant using the extracted content. Users can embed the chatbot on their sites for intelligent, real-time support.</p>
+                                <p>My Contribution: Built core chatbot functionality, OpenAI integration, content crawling system, and user onboarding interface.</p>
                                 <div className="tech-stack">
                                     <span className="tags">React.js</span>
                                     <span className="tags">Nest.js</span>
@@ -69,6 +72,7 @@ const RealTimeProjects = () => {
                             <div className="portfolio-info">
                                 <h4>MILK ATM</h4>
                                 <p>MILK ATM is a dairy management system for tracking daily milk transactions. It allows dairy owners to register clients, record daily milk distribution, and review sales statistics. I developed this app to simplify dairy record-keeping and improve transparency in milk distribution.</p>
+                                <p>My Contribution: Full-stack development of the platform, dashboard design, and transaction system.</p>
                                 <div className="tech-stack">
                                     <span className="tags">Python (DRF )</span>
                                     <span className="tags">React.js</span>

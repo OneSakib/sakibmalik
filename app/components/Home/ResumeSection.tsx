@@ -26,8 +26,8 @@ const ResumeSection = () => {
                         <p><em>Python Developer</em></p>
                         <ul>
                             <li>Sahranpur, India</li>
-                            <li>+91 8954664647</li>
-                            <li>maliksakib347@gmail.com</li>
+                            <li><a href="tel:+918954664647">+91 8954664647</a></li>
+                            <li><a href="mailto:maliksakib347@gmail.com">maliksakib347@gmail.com</a></li>
                         </ul>
                     </div>
 
@@ -36,14 +36,14 @@ const ResumeSection = () => {
                         <h4>Master of Computer Application</h4>
                         <h5>2020 - 2022</h5>
                         <p><em>Dev Bhoomi Group Of Institutions, Sahranpur</em></p>
-                        <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+                        <p>Acquired strong theoretical and practical knowledge in software development, database systems, web technologies, and project management. Successfully completed multiple projects, including a self-driven final project showcasing full-stack capabilities.</p>
                     </div>
 
                     <div className="resume-item">
                         <h4>Bachelor of Computer Application</h4>
                         <h5>2017 - 2020</h5>
                         <p><em>Ramoot College Of Education, Saharanpur</em></p>
-                        <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+                        <p>Developed foundational knowledge in programming, data structures, computer networks, and software engineering.</p>
                     </div>
 
                 </div>
@@ -55,10 +55,19 @@ const ResumeSection = () => {
                         <h5>2022 - Present</h5>
                         <p><em>Mohali, Punjab </em></p>
                         <ul>
-                            <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                            <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                            <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                            <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                            <li>Over 3 years of hands-on experience in developing full-stack web applications using Python, Django, Django Rest Framework (DRF), and Nuxt.js.</li>
+                            <li>Developed RESTful APIs, integrated third-party services, and implemented secure user authentication and authorization flows.</li>
+                            <li>Designed scalable and efficient backend systems with PostgreSQL and MySQL, focusing on performance and data integrity.</li>
+                            <li>Created dynamic frontend interfaces using Nuxt.js, ensuring fast load times and responsive design.</li>
+                            <li>Led end-to-end development of multiple client and in-house projects, including:</li>
+                            <ul>
+                                <li>✅ <a href="https://kashwork.com">Kashwork</a> – E-commerce solution with real-time features</li>
+                                <li>✅ <a href="https://negls.com">Negls</a> – Job portal and freelancing platform, fraud Employee Detection.</li>
+                                <li>✅ <a href="https://ailocalexpert.co">AiLocalExpert</a> – AI-powered Support Chatbot.</li>
+                            </ul>
+                            <li>Deployed applications using Docker, Nginx, and AWS, and configured CI/CD pipelines for production workflows.</li>
+                            <li>Collaborated closely with designers, QA teams, and clients to gather requirements, deliver features, and ensure project success.</li>
+                            <li>Provided mentorship and code reviews for junior developers.</li>
                         </ul>
                     </div>
                 </div>
