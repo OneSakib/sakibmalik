@@ -22,8 +22,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sakib Malik",
-  description: "Sakib Malik || Portfolio",
+  title: "Sakib Malik | Full Stack Developer | Python, Django, Vue, React, Next.js",
+  description: "Sakib Malik is a full stack developer with 3+ years of experience in Python, Django, Vue.js, React, Next.js, FastAPI, and LangChain. Explore projects, skills, and contact info.",
+  keywords: "Sakib Malik, Full Stack Developer, Python Developer, Django, Vue.js, React, Next.js, FastAPI, LangChain, Portfolio, Software Engineer, MCA, Developer from Mohali, India",
   icons: {
     icon: '/logo.ico',
   },
@@ -37,6 +38,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta property="og:title" content="Sakib Malik | Full Stack Developer" />
+        <meta property="og:description" content="Explore Sakib Malik’s projects built with Django, Vue, React, and more." />
+        <meta property="og:url" content="https://sakibmalik.vercel.app" />
+        <meta property="og:image" content="https://sakibmalik.vercel.app/cover-image.jpg" />
         <meta name="google-site-verification" content="3fBWM1HmnoFQLD6S61nNMRT1bQ7NJ_2mas2oITm5D5g" />
       </head>
       <body
