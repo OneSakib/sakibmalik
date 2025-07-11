@@ -41,7 +41,7 @@ export default function RootLayout({
         <meta property="og:title" content="Sakib Malik | Full Stack Developer" />
         <meta property="og:description" content="Explore Sakib Malik’s projects built with Django, Vue, React, and more." />
         <meta property="og:url" content="https://sakibmalik.vercel.app" />
-        <meta property="og:image" content="https://sakibmalik.vercel.app/cover-image.jpg" />
+        <meta property="og:image" content="https://sakibmalik.vercel.app/assets/img/hero-bg.webp" />
         <meta name="google-site-verification" content="3fBWM1HmnoFQLD6S61nNMRT1bQ7NJ_2mas2oITm5D5g" />
       </head>
       <body
