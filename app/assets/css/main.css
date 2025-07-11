@@ -1339,3 +1339,9 @@ section,
   border-left-color: green;
 }
 /* Tech Stack */
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+  }
+}
