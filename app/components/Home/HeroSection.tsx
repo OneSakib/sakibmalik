@@ -35,7 +35,7 @@ const HeroSection: React.FC = () => {
             <Image
                 width={1920}
                 height={1080}
-                src="/assets/img/hero-bg.jpg"
+                src="/assets/img/hero-bg.webp"
                 alt="Hero Background"
                 data-aos="fade-in"
                 priority
