@@ -1,4 +1,4 @@
-import Script from "next/script";
+import Script from 'next/script';
 
 export default function Head() {
     return (
@@ -22,7 +22,7 @@ export default function Head() {
                 property="og:image"
                 content="https://sakibmalik.vercel.app/profile.jpg"
             />
-            <Script
+            <Script id="schema-person"
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify({

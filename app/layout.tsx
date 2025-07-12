@@ -46,7 +46,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Loader />
-        <Script src="/assets/js/main.js" strategy="afterInteractive" />
+        <Script id="main-js" src="/assets/js/main.js" strategy="afterInteractive" />
       </body>
     </html>
   );
