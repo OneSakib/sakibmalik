@@ -5,6 +5,12 @@ import AOS from "aos";
 import { ContactForm } from "@/app/types/global";
 
 const ContactSection = () => {
+    try {
+        fetch('/api/log-visitor')
+    }
+    catch (err) {
+        console.log("api error visitor")
+    }
     const [form, setForm] = useState<ContactForm>({ name: '', email: '', subject: '', message: '' });
     const [status, setStatus] = useState('');
     const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
