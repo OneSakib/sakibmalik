@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 type Visitor = {
     _id: string;
@@ -16,7 +16,7 @@ export default function VisitorPage() {
     const [skip, setSkip] = useState(0);
     const [loading, setLoading] = useState(false);
     const [hasMore, setHasMore] = useState(true);
-    const fetchVisitors = async () => {
+    const fetchVisitors = useCallback(async () => {
         setLoading(true);
         const res = await fetch(`/api/get-visitors?skip=${skip}`);
         const data: Visitor[] = await res.json();
@@ -25,11 +25,11 @@ export default function VisitorPage() {
         setSkip((prev) => prev + 100);
         setHasMore(data.length === 100);
         setLoading(false);
-    };
+    }, [skip]);
 
     useEffect(() => {
         fetchVisitors();
-    }, [skip]);
+    }, [fetchVisitors]);
 
     return (
         <main className="main">
