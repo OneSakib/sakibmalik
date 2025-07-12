@@ -29,7 +29,7 @@ export default function VisitorPage() {
 
     useEffect(() => {
         fetchVisitors();
-    }, []);
+    }, [skip]);
 
     return (
         <main className="main">

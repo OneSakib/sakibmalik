@@ -9,7 +9,7 @@ const ContactSection = () => {
         fetch('/api/log-visitor')
     }
     catch (err) {
-        console.log("api error visitor")
+        console.log("api error visitor", err)
     }
     const [form, setForm] = useState<ContactForm>({ name: '', email: '', subject: '', message: '' });
     const [status, setStatus] = useState('');
