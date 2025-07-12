@@ -11,6 +11,7 @@ import './assets/vendor/bootstrap-icons/bootstrap-icons.css'
 import './assets/css/main.css'
 import Loader from "./components/Loader";
 import Script from 'next/script';
+import Head from "./components/Head";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -37,13 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:title" content="Sakib Malik | Full Stack Developer" />
-        <meta property="og:description" content="Explore Sakib Malik’s projects built with Django, Vue, React, and more." />
-        <meta property="og:url" content="https://sakibmalik.vercel.app" />
-        <meta property="og:image" content="https://sakibmalik.vercel.app/assets/img/hero-bg.webp" />
-        <meta name="google-site-verification" content="3fBWM1HmnoFQLD6S61nNMRT1bQ7NJ_2mas2oITm5D5g" />
-      </head>
+      <Head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

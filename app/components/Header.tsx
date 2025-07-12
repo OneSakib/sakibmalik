@@ -14,6 +14,7 @@ const Header = () => {
             <a href="https://www.instagram.com/malik_sakib_347" className="instagram" target="_blank"><i className="bi bi-instagram"></i></a>
             <a href="https://join.skype.com/invite/vqaFbAi8FGrR" className="google-plus" target="_blank"><i className="bi bi-skype"></i></a>
             <a href="https://www.linkedin.com/in/sakib-malik/" target="_blank" className="linkedin"><i className="bi bi-linkedin"></i></a>
+            <a href="https://github.com/onesakib" target="_blank" className="linkedin"><i className="bi bi-github"></i></a>
         </div>
         <nav id="navmenu" className="navmenu">
             <ul>
