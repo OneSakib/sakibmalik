@@ -17,8 +17,8 @@ async function connectToDatabase() {
 export async function GET(request: NextRequest) {
   try {
     const forwardedFor = request.headers.get("x-forwarded-for");
-    const ip = forwardedFor?.split(",")[0]?.trim() || "unknown";
-    const userAgent = request.headers.get("user-agent") || "unknown";
+    const ip = forwardedFor?.split(",")[0]?.trim() || "N/A";
+    const userAgent = request.headers.get("user-agent") || "N/A";
 
     const geoRes = await fetch(`https://ipapi.co/${ip}/json/`);
     const geoData = await geoRes.json();
@@ -26,8 +26,13 @@ export async function GET(request: NextRequest) {
     const visitorInfo = {
       ip,
       userAgent,
-      country: geoData.country_name || "Unknown",
-      city: geoData.city || "Unknown",
+      country: geoData?.country_name || "N/A",
+      city: geoData?.city || "N/A",
+      region: geoData?.region || "N/A",
+      country_capital: geoData?.country_capital || "N/A",
+      postal: geoData?.postal || "N/A",
+      latitude: geoData?.latitude || "N/A",
+      longitude: geoData?.longitude || "N/A",
       date: new Date().toISOString(),
     };
     // Save to MongoDB

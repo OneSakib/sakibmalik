@@ -7,6 +7,11 @@ type Visitor = {
     ip: string;
     country: string;
     city: string;
+    region: string;
+    country_capital: string;
+    postal: string;
+    latitude: string;
+    longitude: string;
     date: string;
     userAgent?: string;
 };
@@ -44,6 +49,11 @@ export default function VisitorPage() {
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">IP Address</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Country</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">City</th>
+                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Region</th>
+                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Country Capital</th>
+                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Postal Code</th>
+                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Latitude</th>
+                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Longitude</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Date</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">User Agent</th>
                                 </tr>
@@ -54,6 +64,11 @@ export default function VisitorPage() {
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.ip}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.country}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.city}</td>
+                                        <td className="px-4 py-2 text-sm text-gray-900">{v.region}</td>
+                                        <td className="px-4 py-2 text-sm text-gray-900">{v.country_capital}</td>
+                                        <td className="px-4 py-2 text-sm text-gray-900">{v.postal}</td>
+                                        <td className="px-4 py-2 text-sm text-gray-900">{v.latitude}</td>
+                                        <td className="px-4 py-2 text-sm text-gray-900">{v.longitude}</td>
                                         <td className="px-4 py-2 text-sm text-gray-500">{new Date(v.date).toLocaleString()}</td>
                                         <td className="px-4 py-2 text-sm text-gray-500 line-clamp-1 max-w-xs">{v.userAgent}</td>
                                     </tr>
