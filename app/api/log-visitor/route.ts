@@ -20,19 +20,18 @@ export async function GET(request: NextRequest) {
     const ip = forwardedFor?.split(",")[0]?.trim() || "N/A";
     const userAgent = request.headers.get("user-agent") || "N/A";
 
-    const geoRes = await fetch(`https://ipapi.co/${ip}/json/`);
+    const geoRes = await fetch(`http://ip-api.com/json/${ip}`);
     const geoData = await geoRes.json();
-
     const visitorInfo = {
       ip,
       userAgent,
-      country: geoData?.country_name || "N/A",
+      country: geoData?.country || "N/A",
       city: geoData?.city || "N/A",
       region: geoData?.region || "N/A",
-      country_capital: geoData?.country_capital || "N/A",
-      postal: geoData?.postal || "N/A",
-      latitude: geoData?.latitude || "N/A",
-      longitude: geoData?.longitude || "N/A",
+      regionName: geoData?.regionName || "N/A",
+      postal: geoData?.zip || "N/A",
+      latitude: geoData?.lat || "N/A",
+      longitude: geoData?.lon || "N/A",
       date: new Date().toISOString(),
     };
     // Save to MongoDB

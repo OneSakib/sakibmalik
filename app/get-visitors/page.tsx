@@ -8,7 +8,7 @@ type Visitor = {
     country: string;
     city: string;
     region: string;
-    country_capital: string;
+    regionName: string;
     postal: string;
     latitude: string;
     longitude: string;
@@ -50,7 +50,7 @@ export default function VisitorPage() {
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Country</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">City</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Region</th>
-                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Country Capital</th>
+                                    <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Region Name</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Postal Code</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Latitude</th>
                                     <th className="px-4 py-3 text-left text-sm font-medium text-gray-700">Longitude</th>
@@ -65,7 +65,7 @@ export default function VisitorPage() {
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.country}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.city}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.region}</td>
-                                        <td className="px-4 py-2 text-sm text-gray-900">{v.country_capital}</td>
+                                        <td className="px-4 py-2 text-sm text-gray-900">{v.regionName}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.postal}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.latitude}</td>
                                         <td className="px-4 py-2 text-sm text-gray-900">{v.longitude}</td>
