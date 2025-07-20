@@ -34,7 +34,7 @@ export default function VisitorPage() {
 
     useEffect(() => {
         fetchVisitors();
-    }, [fetchVisitors]);
+    }, []);
 
     return (
         <main className="main">
