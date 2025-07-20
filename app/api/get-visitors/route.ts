@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
   try {
     const client = await connectToDatabase();
     const db = client.db(MONGO_DB);
-    const limit = 100;
+    const limit = parseInt(req.nextUrl.searchParams.get("limit") || "50", 50);
     const skip = parseInt(req.nextUrl.searchParams.get("skip") || "0", 10);
     const visitors = await db
       .collection("visitors")

@@ -23,12 +23,12 @@ export default function VisitorPage() {
     const [hasMore, setHasMore] = useState(true);
     const fetchVisitors = useCallback(async () => {
         setLoading(true);
-        const res = await fetch(`/api/get-visitors?skip=${skip}`);
+        const limit = 50;
+        const res = await fetch(`/api/get-visitors?skip=${skip}&limit=${limit}`);
         const data: Visitor[] = await res.json();
-
         setVisitors((prev) => [...prev, ...data]);
-        setSkip((prev) => prev + 50);
-        setHasMore(data.length === 50);
+        setSkip((prev) => prev + 10);
+        setHasMore(data.length === 10);
         setLoading(false);
     }, [skip]);
 
