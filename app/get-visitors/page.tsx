@@ -27,8 +27,8 @@ export default function VisitorPage() {
         const data: Visitor[] = await res.json();
 
         setVisitors((prev) => [...prev, ...data]);
-        setSkip((prev) => prev + 100);
-        setHasMore(data.length === 100);
+        setSkip((prev) => prev + 50);
+        setHasMore(data.length === 50);
         setLoading(false);
     }, [skip]);
 
