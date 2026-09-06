@@ -59,7 +59,7 @@ const AboutSection = () => {
                         #Python #Django #ReactJS #VueJS #NuxtJS #FullStack #SoftwareDevelopment #AWS #EC2 #Docker #Containerization #ScalableSolutions #MachineLearning #DeepLearning #DataScience #AIDevelopment
                     </p>
                     <a
-                        href="/Sakib_Malik_Python_Developer_3_Year_Experience.pdf"
+                        href="/Sakib_Malik_Python_AI_Developer_4_Year_Experience.pdf"
                         download
                         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
                     >
