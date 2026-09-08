@@ -4,8 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "Sakib Malik — Full-Stack Python & AI Developer",
     description: "Sakib Malik — Full-Stack Python & AI/ML Developer specializing in Django, FastAPI, LangChain, RAG, LLM applications, React, Vue, Nuxt and Next.js.",
-    keywords: ["Sakib Malik", "Python Developer", "AI Developer", "Django", "FastAPI", "LangChain", "RAG", "LLM", "React", "Vue", "Nuxt", "Next.js"], authors: [{ name: "Sakib Malik" }], openGraph: {
-        title: "Sakib Malik — Full-Stack Python & AI Developer", description: "Building production-ready web applications, AI agents, RAG systems and LLM-powered products.", type: "website", images: ["https://avatars.githubusercontent.com/u/85505949?v=4"]
+    keywords: ["Sakib Malik", "Python Developer", "AI Developer", "Django", "FastAPI", "LangChain", "RAG", "LLM", "React", "Vue", "Nuxt", "Next.js"],
+    authors: [{ name: "Sakib Malik" }],
+    openGraph: {
+        title: "Sakib Malik — Full-Stack Python & AI Developer",
+        description: "Building production-ready web applications, AI agents, RAG systems and LLM-powered products.",
+        type: "website",
+        images: ["https://avatars.githubusercontent.com/u/85505949?v=4"]
 
     }
 };
@@ -17,5 +22,6 @@ export default function RootLayout({ children }:
         <body>
             {children}
             <SpeedInsights />
-        </body></html>
+        </body>
+    </html>
 }
