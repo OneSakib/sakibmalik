@@ -1,25 +1,21 @@
-import AboutSection from "./components/Home/AboutSection";
-import ContactSection from "./components/Home/ContactSection";
-import HeroSection from "./components/Home/HeroSection";
-import RealTimeProjects from "./components/Home/RealTimeProjects";
-import PortfolioSection from "./components/Home/PortfolioSection";
-import ResumeSection from "./components/Home/ResumeSection";
-import ServicesSection from "./components/Home/ServicesSection";
-import SkillsSection from "./components/Home/SkillsSection";
-// import TestimonialSection from "./components/Home/TestimonialsSection";
-
-export default function Home() {
-  return (
-    <main className="main">
-      <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ResumeSection />
-      <RealTimeProjects />
-      <PortfolioSection />
-      <ServicesSection />
-      {/* <TestimonialSection /> */}
-      <ContactSection />
-    </main>
-  );
-}
+"use client";
+import {useState} from "react";
+const avatar="https://avatars.githubusercontent.com/u/85505949?v=4";
+const stack={"Backend & APIs":["Python","Django","Django REST Framework","FastAPI","REST APIs","WebSockets","Celery"],"AI / LLM Engineering":["LangChain","LangGraph","RAG","AI Agents","OpenAI","Google Gemini","Embeddings","Semantic Search","Chroma"],"Frontend":["React","Next.js","Vue.js","Nuxt.js","JavaScript","TypeScript","HTML","CSS"],"Data & Infrastructure":["PostgreSQL","MySQL","MongoDB","Redis","Docker","Kubernetes","AWS","Nginx","Linux","Git"]};
+const projects=[
+["01","AI / RAG","◈","AI LocalExpert","An AI chatbot platform that crawls website content, transforms it into knowledge and powers a conversational assistant for the business.",["Python","LangChain","RAG","LLM"],"https://ailocalexpert.co",true],
+["02","ECOMMERCE","◫","Kashwork","E-commerce platform with a Django REST backend and Nuxt.js frontend, designed for scalable product and customer workflows.",["Django","DRF","Nuxt.js","PostgreSQL"],"https://kashwork.com"],
+["03","BUSINESS APP","▦","NEGLS","Employee analysis platform focused on turning workforce data into useful business insights and operational visibility.",["Python","Django","Vue.js","Analytics"],"https://negls.com"],
+["04","AI / FOOD","✣","Indian Food AI App","RAG-based support assistant using a food knowledge base with menu and order tools for conversational customer support.",["LangChain","Chroma","RAG","Tools"]],
+["05","DAIRY TECH","◇","MILK ATM","Dairy management system covering customer records, sales tracking, rates and day-to-day operational workflows.",["Python","Django","Database","Business Logic"]],
+["06","OPEN SOURCE","⌘","GitHub Work","Explore my public repositories, experiments and engineering work across Python, AI, web development and automation.",["GitHub","Python","AI","Web"],"https://github.com/OneSakib"]
+] as const;
+export default function Home(){const[open,setOpen]=useState(false);return <div className="site"><div className="noise"/><header className="nav-wrap"><nav className="nav container"><a className="brand" href="#home"><span>SM</span>Sakib Malik</a><button className="menu-btn" onClick={()=>setOpen(!open)} aria-label="Menu" aria-expanded={open}><i/><i/><i/></button><div className={`nav-links ${open?"open":""}`}>{["about","stack","projects","experience","contact"].map(x=><a key={x} href={`#${x}`} onClick={()=>setOpen(false)}>{x}</a>)}</div><a className="nav-cta" href="mailto:maliksakib347@gmail.com">Let&apos;s talk ↗</a></nav></header>
+<main id="home"><section className="hero container"><div><div className="eyebrow"><i/> Available for AI & Full-Stack opportunities</div><h1>Building <em>intelligent</em><br/>products that work.</h1><p className="hero-text">I&apos;m <strong>Sakib Malik</strong>, a Full-Stack Python & AI/ML Developer with 4+ years of professional experience. I build scalable APIs, modern web apps, RAG systems, AI agents and LLM-powered products.</p><div className="hero-actions"><a className="btn primary" href="#projects">View my work ↓</a><a className="btn secondary" href="mailto:maliksakib347@gmail.com">Get in touch ↗</a></div><div className="social-row"><a href="https://github.com/OneSakib">GitHub ↗</a><a href="https://sakibmalik.vercel.app">Portfolio ↗</a><span>Mohali, Punjab · India</span></div></div><div className="hero-card"><div className="orbit a"/><div className="orbit b"/><div className="profile-card"><div className="profile-top"><img src={avatar} alt="Sakib Malik"/><span>● Open to work</span></div><h3>Sakib Malik</h3><p>Python · AI/ML · Full Stack</p><pre><code><b>const</b> sakib = {'{'}{"\n"}  focus: [<em>"AI"</em>, <em>"LLM"</em>, <em>"RAG"</em>],{"\n"}  backend: <em>"Python"</em>,{"\n"}  frontend: [<em>"React"</em>, <em>"Vue"</em>],{"\n"}  ship: <b>true</b>{"\n"}{'}'};</code></pre></div></div></section>
+<section className="marquee-section"><div className="marquee">{["PYTHON","AI / ML","LANGCHAIN","RAG","DJANGO","FASTAPI","REACT","NUXT","NEXT.JS","DOCKER","AWS","PYTHON","AI / ML","LANGCHAIN","RAG","DJANGO","FASTAPI","REACT","NUXT","NEXT.JS","DOCKER","AWS"].map((x,i)=><span key={i}>{x} ✦</span>)}</div></section>
+<section id="about" className="section container"><div className="label">01 — About</div><div className="about-grid"><h2>From backend systems<br/>to <span>AI products.</span></h2><div className="copy"><p>I specialize in turning product ideas into reliable software — from REST APIs and database architecture to AI chatbots, semantic search, RAG pipelines and agentic workflows.</p><p>My core strength is the combination of <strong>Python backend engineering</strong> and <strong>modern AI application development</strong>, with strong full-stack experience across React, Vue, Nuxt and Next.js.</p><div className="stats"><div><b>4+</b><small>Years experience</small></div><div><b>10+</b><small>Core technologies</small></div><div><b>∞</b><small>Problems to solve</small></div></div></div></div></section>
+<section id="stack" className="section stack"><div className="container"><div className="label">02 — Technical stack</div><div className="stack-grid">{Object.entries(stack).map(([k,v])=><div key={k}><h3>{k}</h3><div className="chips">{v.map(x=><span key={x}>{x}</span>)}</div></div>)}</div></div></section>
+<section id="projects" className="section container"><div className="label">03 — Selected work</div><div className="projects-head"><h2>Products I&apos;ve <span>built.</span></h2><p>A selection of web, AI and business applications combining strong engineering with practical product thinking.</p></div><div className="projects">{projects.map(p=><article className={`project ${p[8]?"featured":""}`} key={p[0]}><div className="project-top"><span>{p[0]}</span><span>{p[1]}</span></div><div className="icon">{p[2]}</div><h3>{p[3]}</h3><p>{p[4]}</p><div className="chips tags">{p[5].map(x=><span key={x}>{x}</span>)}</div>{p[6]&&<a href={p[6]}>Visit project ↗</a>}</article>)}</div></section>
+<section id="experience" className="section timeline"><div className="container"><div className="label">04 — Experience & education</div><div className="timeline-row"><span>2022 — Present</span><div><h3>Full-Stack & AI Developer</h3><small>Professional software engineering</small><p>Building production applications across Python backends, REST APIs, modern JavaScript frontends and AI/LLM systems. Work includes chatbots, RAG, semantic search, integrations, deployment and scalable application architecture.</p></div></div><div className="timeline-row"><span>2020 — 2022</span><div><h3>Master of Computer Applications (MCA)</h3><small>Dev Bhoomi Group of Institutions · Saharanpur</small><p>Advanced study in computer applications, software development and engineering fundamentals.</p></div></div></div></section>
+<section className="section container"><div className="label">05 — What I build</div><div className="services">{[["01","AI Applications","LLM-powered products, AI assistants, agents and practical automation."],["02","RAG & Search","Document intelligence, embeddings, vector databases and semantic retrieval."],["03","Backend Systems","Reliable Django/FastAPI services, REST APIs, databases and integrations."],["04","Full-Stack Products","End-to-end web applications with modern React/Vue ecosystems."]].map(x=><div key={x[0]}><span>{x[0]}</span><h3>{x[1]}</h3><p>{x[2]}</p></div>)}</div></section>
+<section id="contact" className="contact"><div className="container"><div className="label">06 — Contact</div><h2>Have an idea?<br/><span>Let&apos;s build it.</span></h2><p>I&apos;m interested in AI products, backend engineering, full-stack applications and challenging technical problems.</p><a className="email" href="mailto:maliksakib347@gmail.com">maliksakib347@gmail.com ↗</a><div className="contact-links"><a href="https://github.com/OneSakib">GitHub</a><a href="https://sakibmalik.vercel.app">Portfolio</a></div></div></section></main><footer className="footer container">© {new Date().getFullYear()} Sakib Malik <span>Built with Next.js · GitHub Pages ready</span></footer></div>}
